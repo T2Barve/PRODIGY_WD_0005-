@@ -1,0 +1,49 @@
+{
+  "name": "career-prep-platform",
+  "version": "1.0.0",
+  "description": "A comprehensive career preparation platform with learning paths, resume builder, and interview prep",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "install-all": "npm install && npm run install-client"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.20.1",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.1",
+    "express-rate-limit": "^6.10.0",
+    "helmet": "^7.0.0",
+    "express-validator": "^7.0.1",
+    "pdf-parse": "^1.1.1",
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "career",
+    "resume",
+    "interview",
+    "learning",
+    "job-prep"
+  ],
+  "author": "Career Prep Platform",
+  "license": "MIT"
+}
